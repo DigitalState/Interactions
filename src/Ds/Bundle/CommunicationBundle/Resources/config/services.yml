@@ -1,0 +1,3 @@
+services:
+    ds_communication.service.communication:
+        class: Ds\Bundle\CommunicationBundle\Service\CommunicationService

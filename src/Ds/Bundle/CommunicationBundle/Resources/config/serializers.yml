@@ -1,0 +1,7 @@
+services:
+    ds_communication.serializer.context_builder.communication:
+        decorates: api_platform.serializer.context_builder
+        class: Ds\Bundle\CommunicationBundle\Serializer\ContextBuilder\CommunicationContextBuilder
+        arguments:
+            - "@ds_communication.serializer.context_builder.communication.inner"
+            - "@security.authorization_checker"
